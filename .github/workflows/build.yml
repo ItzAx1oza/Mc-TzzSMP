@@ -20,7 +20,7 @@ jobs:
         run: |
           set -euo pipefail
           cat ci/src-*.b64 | tr -d '\n\r ' | base64 -d > TzzSMP-source.tar.xz
-          echo "61c600aac9e17bbeaeaa66f2af2f3427eb7cbe9dd5d9ccf362f5c6756bc44bde  TzzSMP-source.tar.xz" | sha256sum -c -
+          echo "20fcfab3ed6cae3795e40124e7d46758671666dc2505fa4354a195701adf5a73  TzzSMP-source.tar.xz" | sha256sum -c -
           mkdir source
           tar -xJf TzzSMP-source.tar.xz -C source
       - name: Set up Java 21
